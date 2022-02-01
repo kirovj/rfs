@@ -1,8 +1,6 @@
 # RFS - Rust File System
 
-It was cloned from [simple-http-server](https://github.com/TheWaWaR/simple-http-server)
-
-For my use & rust learning.
+Cloned from [simple-http-server](https://github.com/TheWaWaR/simple-http-server) for my use & rust learning.
 
 Thanks to [TheWaWaR](https://github.com/TheWaWaR). If you need use software like this, please use [simple-http-server](https://github.com/TheWaWaR/simple-http-server).
 
@@ -11,7 +9,7 @@ Thanks to [TheWaWaR](https://github.com/TheWaWaR). If you need use software like
 
 ### Command Line Arguments
 ```
-Simple HTTP(s) Server 0.6.1
+Rust File System 0.0.1
 
 USAGE:
     simple-http-server [FLAGS] [OPTIONS] [--] [root]

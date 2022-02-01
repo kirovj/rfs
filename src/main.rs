@@ -48,7 +48,7 @@ lazy_static! {
 }
 
 fn main() {
-    let matches = clap::App::new("Simple HTTP(s) Server")
+    let matches = clap::App::new("Rust File System")
         .setting(clap::AppSettings::ColoredHelp)
         .version(crate_version!())
         .arg(clap::Arg::with_name("root")
