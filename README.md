@@ -1,4 +1,10 @@
-# How it looks like?
+# RFS - Rust File System
+
+It was cloned from [simple-http-server](https://github.com/TheWaWaR/simple-http-server)
+
+For my use & rust learning.
+
+Thanks to [TheWaWaR](https://github.com/TheWaWaR). If you need use software like this, please use [simple-http-server](https://github.com/TheWaWaR/simple-http-server).
 
 ### Screenshot
 <img src="./screenshot.png" width="80%" height="80%">
