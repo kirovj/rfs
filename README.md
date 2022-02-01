@@ -12,7 +12,7 @@ Thanks to [TheWaWaR](https://github.com/TheWaWaR). If you need use software like
 Rust File System 0.0.1
 
 USAGE:
-    simple-http-server [FLAGS] [OPTIONS] [--] [root]
+    rfs [FLAGS] [OPTIONS] [--] [root]
 
 FLAGS:
         --cors       Enable CORS via the "Access-Control-Allow-Origin" header
@@ -41,53 +41,4 @@ OPTIONS:
             serve this file (server root relative) in place of missing files (useful for single page apps) [aliases:
             try-file-404]
     -l, --upload-size-limit <upload_size_limit>    Upload file size limit [bytes] [default: 8000000]
-
-
 ```
-
-# Installation
-
-### Download binary 
-[Goto Download](https://github.com/TheWaWaR/simple-http-server/releases)
-
- - windows-64bit
- - osx-64bit
- - linux-64bit
-
-
-### Install by cargo
-
-``` bash
-# Install Rust
-curl https://sh.rustup.rs -sSf | sh
-
-# Install simple-http-server
-cargo install simple-http-server
-rehash
-simple-http-server -h
-```
-
-# Features
-- [x] Windows support (with colored log)
-- [x] Specify listen address (ip, port)
-- [x] Specify running threads
-- [x] Specify root directory
-- [x] Pretty log
-- [x] Nginx like directory view (directory entries, link, filesize, modfiled date)
-- [x] Breadcrumb navigation
-- [x] (default enabled) Guess mime type
-- [x] (default enabled) HTTP cache control
-  - Sending Last-Modified / ETag
-  - Replying 304 to If-Modified-Since
-- [x] (default enabled) Partial request
-  - Accept-Ranges: bytes([ByteRangeSpec; length=1])
-  - [Range, If-Range, If-Match] => [Content-Range, 206, 416]
-- [x] (default disabled) Automatic render index page [index.html, index.htm]
-- [x] (default disabled) Upload file
-  - A CSRF token is generated when upload is enabled and must be sent as a parameter when uploading a file
-- [x] (default disabled) HTTP Basic Authentication (by username:password)
-- [x] Sort by: filename, filesize, modifled
-- [x] HTTPS support
-- [x] Content-Encoding: gzip/deflate
-- [x] Added CORS headers support
-- [x] Silent mode
